@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Chat App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat UI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="chat-container">
-        <div class="header">
-            <div class="profile">
-                <img src="profile.jpg" alt="Profil" class="profile-img">
-                <span class="name">Aku Dah Lupa</span>
-            </div>
-        </div>
-
-        <div class="messages">
-            <div class="info-message">
-                <p>Pesan dan panggilan terenkripsi secara end-to-end. Hanya orang di chat ini yang bisa membaca, mendengarkan, atau membagikannya. Pelajari selengkapnya.</p>
-                <p class="unread">1 pesan belum dibaca</p>
-            </div>
-            <div class="message">
-                <p>Halo</p>
-                <span class="time">18.35</span>
-            </div>
-        </div>
-
-        <div class="input-container">
-            <input type="text" placeholder="Ketik pesan" class="input-message">
-            <button class="send-button">Kirim</button>
-        </div>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="avatar.png" alt="Avatar" class="avatar" />
+      <div class="name">Aku Dah Lupa</div>
     </div>
+    <div class="chat-body" id="chatBody">
+      <div class="message">
+        <span class="text">Halo</span>
+        <span class="time">18.35</span>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="inputPesan" placeholder="Ketik pesan" />
+      <button onclick="kirimPesan()">Kirim</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
