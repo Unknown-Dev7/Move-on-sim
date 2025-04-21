@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ece5dd;
+}
+.header {
+  background-color: #075e54;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+.progress-container {
+  background-color: #ddd;
+  height: 6px;
+}
+.progress-bar {
+  height: 6px;
+  background-color: #25d366;
+  width: 0%;
+  transition: 0.3s;
+}
+.chat-box {
+  padding: 10px;
+  height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.msg {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+.from-him {
+  background-color: white;
+  align-self: flex-start;
+}
+.from-you {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+.options {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.option-btn {
+  padding: 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+.option-btn:hover {
+  background-color: #f0f0f0;
+}
